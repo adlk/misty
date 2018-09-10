@@ -1,0 +1,40 @@
+{
+  "name": "@adlk/misty",
+  "version": "0.1.0",
+  "description": "Misty is a concurrent script runner that can watch directories and restart processes on file changes.",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "keywords": [
+    "task runner",
+    "electron",
+    "concurrent",
+    "dev tool"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "prepack": "yarn compile",
+    "compile": "tsc"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "chokidar": "^2.0.4",
+    "concurrently": "^4.0.1",
+    "js-yaml": "^3.12.0",
+    "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
+    "wait-on": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/chokidar": "^1.7.5",
+    "@types/debug": "^0.0.30",
+    "@types/js-yaml": "^3.11.2",
+    "@types/lodash": "^4.14.116",
+    "@types/minimist": "^1.2.0",
+    "debug": "^3.1.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "bin": {
+    "misty": "./dist/cli.js"
+  }
+}
