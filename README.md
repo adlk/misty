@@ -4,7 +4,7 @@ Misty is a concurrent script runner that can watch directories and restart proce
 
 ## When to use Misty
 
-Misty shines when you want to launch multiple scripts within the same terminal. She is especially usefull for e.g. developing an electron app where you have to run multipe commands at once like frontend, backend, database and electron.
+Misty shines when you want to launch multiple scripts within the same terminal. She is especially usefull for e.g. developing an electron app where you have to run multipe commands at once like frontend, backend, database and electron + restarting electron whenever files for the main renderer change.
 
 ## How to use Misty
 
