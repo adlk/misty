@@ -10,13 +10,24 @@ Misty shines when you want to launch multiple scripts within the same terminal. 
 
 Misty is controlled via the `misty.yml` in your projects root directory.
 
-To launch Misty run
+### 1. Install Misty
+
 ```shell
-$ npx misty
+npm install @adlk/misty
 ```
-or 
+
+### [2. Create misty.yml](#example-mistyyml)
+
+### 3. Run Misty
+
 ```shell
-$ ./node_modules/.bin/misty
+npx misty
+```
+
+or
+
+```shell
+./node_modules/.bin/misty
 ```
 
 ### Example misty.yml
