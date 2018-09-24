@@ -1,7 +1,7 @@
+import chalk from "chalk";
 import debug from "debug";
 import minimist from "minimist";
 
-import chalk from "../node_modules/chalk";
 import Execute from "./lib/Execute";
 
 const d = debug("misty:exec");
