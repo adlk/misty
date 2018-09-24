@@ -1,6 +1,6 @@
 {
   "name": "@adlk/misty",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Misty is a concurrent script runner that can watch directories and restart processes on file changes.",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
