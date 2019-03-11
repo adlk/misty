@@ -1,6 +1,6 @@
 {
   "name": "@adlk/misty",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Misty is a concurrent script runner that can watch directories and restart processes on file changes.",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "prepack": "yarn compile",
+    "prepare": "npm run compile",
     "compile": "tsc"
   },
   "repository": {
