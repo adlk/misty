@@ -4,8 +4,13 @@ import { FSWatcher } from "fs";
 
 const d = debug("misty:watcher");
 
-interface IOptions {
+interface IWatcherArgs {
   watchDir: string;
+  ignoreInitial?: boolean;
+}
+
+interface IOptions {
+  watchDir: string | string[];
   ignoreInitial?: boolean;
 }
 
@@ -15,14 +20,16 @@ export default class Watcher {
   public options: IOptions;
   public watcher: FSWatcher;
 
-  constructor({ watchDir, ignoreInitial}: IOptions) {
+  constructor({ watchDir, ignoreInitial}: IWatcherArgs) {
     if (!watchDir) {
       throw new Error("Listening directory must be defined");
     }
 
+    const watchDirs = watchDir.split(',');
+
     this.options = {
       ignoreInitial: ignoreInitial || true,
-      watchDir,
+      watchDir: watchDirs,
     };
 
     d("Initializing Watcher with %o", this.options);
