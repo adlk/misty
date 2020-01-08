@@ -62,7 +62,7 @@ export default class Misty {
       command = `node ${path.join(__dirname, "../exec.js")} --name="${name}" --watchDir="${config.watchDir}" --cmd="${command}" ${config.cwd ? `--cwd=${config.cwd}` : ""} ${process.env.DEBUG ? `--debug=${process.env.DEBUG}` : ""}`;
 
       if (config.waitOn) {
-        command = `./node_modules/.bin/wait-on ${config.waitOn} && ${command}`;
+        command = `npx wait-on ${config.waitOn} && ${command}`;
       }
 
       commands.push({
